@@ -37,7 +37,6 @@ export class SearchResultsComponent {
     const end = place.geometry.coordinates as [number, number];
 
     this.mapService.getRouteBetweenPlaces(end, start);
-    const query = "";
-    this.placesService.getPlacesByQuery(query);
+    this.placesService.hideSearchResults()
   }
 }

@@ -13,12 +13,12 @@ import { DirectionsApiClient } from "../api";
 import { DirectionsResponse } from "../interfaces";
 import { Feature } from "../interfaces/PlacesResponse";
 import { Route } from "../interfaces/directions";
-import { catchError, throwError } from "rxjs";
 
 @Injectable({
   providedIn: "root",
 })
 export class MapService {
+
   private map?: Map;
   public markers?: Marker[];
 
