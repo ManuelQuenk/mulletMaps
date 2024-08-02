@@ -1,0 +1,11 @@
+<div class="searchbar-container">
+  <input
+   type="text"
+   class="form-control"
+   placeholder="Buscar..."
+   #searchQuery
+   (keyup)="searchPlacesByQuery(searchQuery.value)"
+  >
+  <map-search-results />
+
+</div>

@@ -1,0 +1,49 @@
+.pointer {
+  cursor: pointer;
+}
+
+h6 {
+  font-size: 23px;
+}
+
+p {
+  font-size: 16px;
+}
+
+ul {
+  /* margin-bottom: .5rem; */
+  display: flex;
+  align-items: center;
+}
+
+li {
+  padding: 10px 8px 10px 8px;
+  width  : 294px;
+
+  border       : 1px solid #6bb3b3;
+  border-radius: 3px;
+
+  display        : flex;
+  flex-direction : column;
+  justify-content: flex-start;
+}
+
+.search-description {
+  display        : flex;
+  flex-direction : row;
+  justify-content: space-between;
+  align-items    : flex-start;
+}
+
+button {
+  height: 35px;
+  width: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+span {
+ font-size: 20px;
+ font-weight: bold;
+}
