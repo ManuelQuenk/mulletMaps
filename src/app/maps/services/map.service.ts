@@ -108,15 +108,15 @@ export class MapService {
     // Polyline
     // Configure source info
     const sourceData: AnySourceData = {
-      type: "geojson",
+      type: 'geojson',
       data: {
-        type: "FeatureCollection",
+        type: 'FeatureCollection',
         features: [
           {
-            type: "Feature",
+            type: 'Feature',
             properties: {},
             geometry: {
-              type: "LineString",
+              type: 'LineString',
               coordinates: coords,
             },
           },
@@ -124,15 +124,17 @@ export class MapService {
       },
     };
     // Limpiar rutas anteriores
-    if (this.map.getLayer("RouteString")) {
-      this.map.removeLayer("RouteString"), this.map.removeSource("RouteString");
+    if (this.map.getLayer('RouteString')) {
+      this.map.removeLayer('RouteString');
+      this.map.removeSource('RouteString');
     }
 
     // add source to map
-    this.map.addSource("RouteString", sourceData);
+    this.map.addSource('RouteString', sourceData);
+
     // Configure look of the polyline and assign it to source
     this.map.addLayer({
-      id: "RouteStringID",
+      id: "RouteString",
       type: "line",
       source: "RouteString",
       layout: {
@@ -146,8 +148,3 @@ export class MapService {
     });
   }
 }
-
-// NOT WORKING ONE
-// https://api.mapbox.com/directions/v5/mapybox/driving/-64.4986317%2C-31.4211988%3B-64.1756%2C-31.429?access_token=pk.eyJ1IjoibXVsbGV0bWFudSIsImEiOiJjbHZ5YzY5MG8wMzJ6MmpsNndlNWs3bGFuIn0.vznA7uogCYddtQQo3LS65g&alternatives=false&geometries=geojson&language=es&overview=simplified&steps=false
-// https://api.mapbox.com/directions/v5/mapbox/driving /-64.19041%2C-31.420877%3B-63.243484%2C-32.410168?alternatives=false&geometries=geojson&overview=simplified&steps=false&notifications=none&access_token=pk.eyJ1IjoibXVsbGV0bWFudSIsImEiOiJjbHVzaWp3Z3EwajE5Mmpua3Y1Nm00NWIzIn0.BXH02qD27MpXTxHmKUcGfQ
-// WORKING ONE
