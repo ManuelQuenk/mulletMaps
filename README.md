@@ -1,9 +1,6 @@
 # MulletMaps
 
-Project live on [MulletMaps][1]
-[1]: https://mulletmaps.netlify.app/            "MulletMaps"
-
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.6.
+Project live on [MulletMaps](https://mulletmaps.netlify.app/)
 
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.6.
